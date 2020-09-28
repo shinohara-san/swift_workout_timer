@@ -7,6 +7,10 @@
 
 import UIKit
 
-class ListTableViewCell: UITableViewCell {
+protocol ListTableViewCellDelegate {
+    func moveToEdit()
+}
 
+class ListTableViewCell: UITableViewCell {
+    static let identifier = "ListTableViewCell"
 }
